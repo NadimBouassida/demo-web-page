@@ -3,8 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Demo Page</title>
+    <link rel="stylesheet" href="/stylesheets/reset.css">
+    <link rel="stylesheet" href="/stylesheets/main.css">
+    <script src="main.js"></script>
+    <title>Portfolio</title>
 </head>
 <body>
+    <header class="header" id="header">
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        <nav id="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directories/projects.html">Projects</a></li>
+                <li><a href="directories/discussions.html">Discussions</a></li>
+                <li><a href="directories/contact.html">Contact</a></li>
+                <li><a href="directories/about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <script>
+        function toggleMenu() {
+            const navMenu = document.querySelector('#navbar ul');
+            navMenu.classList.toggle('active');
+        }
+    </script>
 </body>
 </html>

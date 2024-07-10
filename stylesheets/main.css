@@ -1,0 +1,61 @@
+#header{
+    background-color: #caf0f8;
+    padding: 1% 0;
+}
+
+#navbar{
+    background-color: #caf0f8;
+}
+
+#navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+#navbar ul li {
+    margin-left: 1rem;
+}
+
+#navbar ul li a{
+    display: block;
+    text-decoration: none;
+    padding: 8px 16px;
+}
+
+#navbar ul li a:hover {
+    background-color: #0077b6;
+    color: white;
+}
+
+.menu-toggle {
+    cursor: pointer;
+    padding: 10px;
+    display: none; /* Hidden by default on larger screens */
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block; /* Show menu toggle icon */
+    }
+
+    #navbar ul {
+        display: none; /* Hide navigation links by default */
+        flex-direction: column; /* Stack links vertically */
+        position: absolute;
+        background-color: #333;
+        text-align: center;
+        margin-left: 2vw;
+    }
+
+    #navbar ul li{
+        margin-left: 0;
+    }
+
+    #navbar ul.active {
+        display: flex; /* Show navigation links when active */
+    }
+    
+    #navbar ul li a{
+        color: white;
+    }
+}
