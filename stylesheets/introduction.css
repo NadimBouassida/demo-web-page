@@ -1,0 +1,30 @@
+.introduction {
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    margin: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.introduction h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.introduction p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.introduction a {
+    padding: 8px;
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.introduction a:hover {
+    background-color: #caf0f8;
+}
